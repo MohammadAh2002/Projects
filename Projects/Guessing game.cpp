@@ -1,6 +1,16 @@
 /*
 
-    Start the Game Read The Rules and Play.
+    Write a Small Guessing Game.
+    
+    Requirements:
+    • Ask the player to pick a number in their head between 1 and 100.
+    • The computer will guess the player's number in each round. The player provides feedback:
+        - Enter l if the number is larger than the computer's guess.
+        - Enter s if the number is smaller than the computer's guess.
+        - Enter c if the computer's guess is correct.
+    
+    • The computer tries to guess the number within 7 attempts.
+    • If the computer doesn't guess the number in 7 tries, the player wins the round.
 
 */
 
@@ -59,7 +69,6 @@ void print_result(roundinfo& round) {
 
     cout << "the number you picked is: " << round.randompick << endl;
     cout << "i gussed it after: " << round.rounds_played << " trys\n";
-
 
 }
 
