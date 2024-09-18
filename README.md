@@ -1,6 +1,7 @@
 # Projects
 This repository contains various projects I have worked on.
-Each project demonstrates different aspects of  programming, including algorithms, data structures, object-oriented design, and more.
+- Each project demonstrates different aspects of  programming, including algorithms, data structures, object-oriented design, and more.
+- I have used various technologies such as C++, C#, Python, and more. 
 
 ## Projects organization
 Each project in this repository is organized into its own directory, ensuring that all related files are kept together.
