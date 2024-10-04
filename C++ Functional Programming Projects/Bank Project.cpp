@@ -22,10 +22,19 @@
 	- the User Should Navigate the Program With Numbers in Keyboard.
 	- Use Text File as a Database.
 
+	-------------------------------------------------------------
+
 	Client Should be Stored in the File in This Format:
 		a150#//#1234#//#mohammad#//#87313#//#400
 		b150#//#9876#//#ahmad#//#456435798#//#500
 		c150#//#5913#//#koko#//#456478435#//#900
+
+	- in the Start You don't have any Client you should add them the do the other Operations
+	- if any thing goes Wrong with Client Data Do Thes Steps:
+		1- Create A Text File Called: ClintsInfoFile.
+		2- Cope the Data Above to the File.
+		3- Make Sure there is no Spaces Before and After the Data.
+		4- Change the ClientsFile Variable Value to the File Path.
 
 */
 
