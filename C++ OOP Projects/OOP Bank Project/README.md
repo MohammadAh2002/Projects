@@ -50,7 +50,7 @@ to Enter the System (Login Screen) You Have an User:
     
     Permissions:
         - to do any Operation the User Should Have a Permission to do it so Make a Permissions System in Your Program.
-	- the User Should not be able to do any Operation he dont have Permission to it.
+        - the User Should not be able to do any Operation he dont have Permission to it.
 
     Currency Exchange:
         1- List Currencies.
