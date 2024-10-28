@@ -129,5 +129,5 @@ This is Bank Project Using C++, OOP, and Text Files as Database
         - Store Every Money Transfer Between 2 Accounts.
 
 ## Feedback and Questions
-    - Feel free to report any mistakes you find.  
-    - Feel free to ask any questions you have.
+- Feel free to report any mistakes you find.  
+- Feel free to ask any questions you have.
