@@ -27,7 +27,7 @@ to Enter the System (Login Screen) You Have an User:
         6- Exit (Close the Program).
         7- Transactions (go to the Transactions Menu).
 	8- Logout (go to the Login Screen).
-	9- Manage Users (go to the Manage Users Screen).
+ 	9- Manage Users (go to the Manage Users Screen).
         10- Login Register.
         11- Currency Exchange.
 
