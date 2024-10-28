@@ -47,8 +47,8 @@ to Enter the System (Login Screen) You Have an User:
 
     - the User Should Navigate the Program With Numbers in Keyboard.
     - Use Text File as a Database.
-
-   Permissions:
+    
+    Permissions:
         - to do any Operation the User Should Have a Permission to do it so Make a Permissions System in Your Program.
 	- the User Should not be able to do any Operation he dont have Permission to it.
 
