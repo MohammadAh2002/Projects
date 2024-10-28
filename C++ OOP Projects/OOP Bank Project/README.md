@@ -87,10 +87,10 @@ to Enter the System (Login Screen) You Have an User:
         Khaili,Ahmed,Khalil,8928982,A102,1234,10350.000000
         Adli,Haddad,Adli@Gmail.com,8983883,A103,1234,555.000000
 
-        - Field 1: First Name
-        - Field 2: Second Name
-        - Field 3: Email
-        - Field 4: Phone Number
+	- Field 1: First Name
+	- Field 2: Second Name
+	- Field 3: Email
+	- Field 4: Phone Number
 	- Field 5: Account Number
 	- Field 6: Pin Code
 	- Field 7: Balance
@@ -111,10 +111,10 @@ to Enter the System (Login Screen) You Have an User:
         Lina,Loay,Lina@gmail.com,1456,User3,1456,-1
         Mazem,Kareem,Mazin@gmail.com,898234,User4,1456,-1
 
-        - Field 1: First Name
-        - Field 2: Second Name
-        - Field 3: Email
-        - Field 4: Phone Number
+	- Field 1: First Name
+	- Field 2: Second Name
+	- Field 3: Email
+	- Field 4: Phone Number
 	- Field 5: Username
 	- Field 6: Password
 	- Field 7: Permissions
