@@ -2,13 +2,13 @@
 This is Bank Project Using C++, OOP, and Text Files as Database
 
 ## How to Run the Project
-    1. Download and install Visual Studio (the purple one).
-    2. Open the main folder and click on `Bank System.sln`, or open Visual Studio and load the project.
-    3. Run the project from Visual Studio.
+1. Download and install Visual Studio (the purple one).
+2. Open the main folder and click on `Bank System.sln`, or open Visual Studio and load the project.
+3. Run the project from Visual Studio.
 
-    to Enter the System (Login Screen) You Have an User:
-    - Username: UserAdmin
-    - Password: 1234
+to Enter the System (Login Screen) You Have an User:
+	- Username: UserAdmin
+	- Password: 1234
 
 ### requirement
 
