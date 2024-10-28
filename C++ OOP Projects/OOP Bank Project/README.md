@@ -7,8 +7,8 @@ This is Bank Project Using C++, OOP, and Text Files as Database
 3. Run the project from Visual Studio.
 
 to Enter the System (Login Screen) You Have an User:
-	- Username: UserAdmin
-	- Password: 1234
+- Username: UserAdmin
+- Password: 1234
 
 ### requirement
 
