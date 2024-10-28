@@ -91,9 +91,9 @@ to Enter the System (Login Screen) You Have an User:
         - Field 2: Second Name
         - Field 3: Email
         - Field 4: Phone Number
-		- Field 5: Account Number
-		- Field 6: Pin Code
-		- Field 7: Balance
+	- Field 5: Account Number
+	- Field 6: Pin Code
+	- Field 7: Balance
 
 	User Data:
 
@@ -115,9 +115,9 @@ to Enter the System (Login Screen) You Have an User:
         - Field 2: Second Name
         - Field 3: Email
         - Field 4: Phone Number
-		- Field 1: Username
-		- Field 2: Password
-		- Field 3: Permissions
+	- Field 5: Username
+	- Field 6: Password
+	- Field 7: Permissions
 
     Currencies:
         - Store Currencies in File And Add the Feature of Converting Between them.
