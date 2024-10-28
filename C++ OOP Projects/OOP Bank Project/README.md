@@ -37,19 +37,19 @@ to Enter the System (Login Screen) You Have an User:
         3- Total Balances.
         4- Main Menue (Get you Back to Main Menu).
 
-	Manage Users Menu Screen:
-		1- List All Users.
-		2- Find User.
-		3- Add User.
-		4- Delete User.
-		5- Update User.
-		6- Main Menu Scrren (get you Back to Main Menu).
+    Manage Users Menu Screen:
+        1- List All Users.
+        2- Find User.
+        3- Add User.
+        4- Delete User.
+        5- Update User.
+        6- Main Menu Scrren (get you Back to Main Menu).
 
     - the User Should Navigate the Program With Numbers in Keyboard.
     - Use Text File as a Database.
 
-	Permissions:
-	- to do any Operation the User Should Have a Permission to do it so Make a Permissions System in Your Program.
+   Permissions:
+        - to do any Operation the User Should Have a Permission to do it so Make a Permissions System in Your Program.
 	- the User Should not be able to do any Operation he dont have Permission to it.
 
     Currency Exchange:
