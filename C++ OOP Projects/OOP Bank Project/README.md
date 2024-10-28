@@ -70,23 +70,6 @@ to Enter the System (Login Screen) You Have an User:
     -------------------------------------------------------------
 
 	Client Data:
-
-    - in the Start You don't have any Client you should add them the do the other Operations.
-	- you can Start the Program With no Client and Add them in the Program.
-	- You can Creat A file With Client Data and Start the Program With Clients.
-
-	How to Start with Clients:
-	
-	1- Create A Text File Called: ClintsInfoFile.
-	2- Cope the Data below to the File.
-	3- Make Sure there is no Spaces Before and After the Data.
-	4- Change the ClientsFile Variable Value to the File Path.
-
-	Client Should be Stored in the File in This Format:
-        mohammad,ahmad,lexmoh@gmail.com,0543812415,A101,1234,50000.000000
-        Khaili,Ahmed,Khalil,8928982,A102,1234,10350.000000
-        Adli,Haddad,Adli@Gmail.com,8983883,A103,1234,555.000000
-
 	- Field 1: First Name
 	- Field 2: Second Name
 	- Field 3: Email
@@ -95,22 +78,7 @@ to Enter the System (Login Screen) You Have an User:
 	- Field 6: Pin Code
 	- Field 7: Balance
 
-	User Data:
-
-	- When you run the Program you well See the Login Screen
-	  so you Should Already Have Some Users to Enter the System.
-	- Follow the Steps to Enter the System and add Users.
-
-	1- Create A Text File Called: UsersInfoFile.
-	2- Cope the Data below to the File.
-	3- Make Sure there is no Spaces Before and After the Data.
-	4- Change the UsersFile Variable Value to the File Path.
-
-	Users Should be Stored in the File in This Format:
-        Jamil,Adli,Jamil@gmail.com,23123123,User2,1456,-1
-        Lina,Loay,Lina@gmail.com,1456,User3,1456,-1
-        Mazem,Kareem,Mazin@gmail.com,898234,User4,1456,-1
-
+	User Data:	
 	- Field 1: First Name
 	- Field 2: Second Name
 	- Field 3: Email
