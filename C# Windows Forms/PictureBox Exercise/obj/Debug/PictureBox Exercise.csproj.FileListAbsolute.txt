@@ -1,0 +1,10 @@
+C:\Users\lexmo\OneDrive\Desktop\C# Windows Forms\PictureBox Exercise\bin\Debug\PictureBox Exercise.exe.config
+C:\Users\lexmo\OneDrive\Desktop\C# Windows Forms\PictureBox Exercise\bin\Debug\PictureBox Exercise.exe
+C:\Users\lexmo\OneDrive\Desktop\C# Windows Forms\PictureBox Exercise\bin\Debug\PictureBox Exercise.pdb
+C:\Users\lexmo\OneDrive\Desktop\C# Windows Forms\PictureBox Exercise\obj\Debug\PictureBox Exercise.csproj.AssemblyReference.cache
+C:\Users\lexmo\OneDrive\Desktop\C# Windows Forms\PictureBox Exercise\obj\Debug\PictureBox_Exercise.Form1.resources
+C:\Users\lexmo\OneDrive\Desktop\C# Windows Forms\PictureBox Exercise\obj\Debug\PictureBox_Exercise.Properties.Resources.resources
+C:\Users\lexmo\OneDrive\Desktop\C# Windows Forms\PictureBox Exercise\obj\Debug\PictureBox Exercise.csproj.GenerateResource.cache
+C:\Users\lexmo\OneDrive\Desktop\C# Windows Forms\PictureBox Exercise\obj\Debug\PictureBox Exercise.csproj.CoreCompileInputs.cache
+C:\Users\lexmo\OneDrive\Desktop\C# Windows Forms\PictureBox Exercise\obj\Debug\PictureBox Exercise.exe
+C:\Users\lexmo\OneDrive\Desktop\C# Windows Forms\PictureBox Exercise\obj\Debug\PictureBox Exercise.pdb
