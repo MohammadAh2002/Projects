@@ -40,7 +40,7 @@ This layered architecture enhances **scalability** and **maintainability** by or
 - **SQL Server** and **SQLite** for relational database management, with T-SQL supporting advanced database operations in SQL Server.  
 - **Swagger UI** integrated as both a presentation and testing interface, providing full documentation and easy interaction with over 100 API endpoints.  
 - **Middlewares** for logging every incoming request, ensuring traceability and observability throughout the system.
-- **Controllers with Attributes and XML Documentation:**  
+- **Controllers with Attributes:**  
   The API endpoints are implemented using ASP.NET Core Controllers decorated with attributes for routing, validation, response types, Documentation and more.  
 
 ## 📌 Key Features
