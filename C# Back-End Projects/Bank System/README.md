@@ -15,7 +15,6 @@ This project was developed as a comprehensive learning exercise to solidify skil
 - Practice working with and supporting both SQL Server and SQLite backends.
 
 ## Architecture
-
 The system is built upon a **3-tier architecture**, effectively separating concerns into distinct layers:
 
 - **Presentation Layer:**  
@@ -35,7 +34,6 @@ The system is built upon a **3-tier architecture**, effectively separating conce
 This layered architecture enhances **scalability** and **maintainability** by organizing code logically and minimizing interdependencies.
 
 ## Technologies Used
-
 - **C#**, **.NET** and **ASP.NET Core** for building a powerful, modular Web API backend.  
 - **SQL Server** and **SQLite** for relational database management, with T-SQL supporting advanced database operations in SQL Server.  
 - **Swagger UI** integrated as both a presentation and testing interface, providing full documentation and easy interaction with over 100 API endpoints.  
@@ -44,7 +42,6 @@ This layered architecture enhances **scalability** and **maintainability** by or
   The API endpoints are implemented using ASP.NET Core Controllers decorated with attributes for routing, validation, response types, Documentation and more.  
 
 ## 📌 Key Features
-
 - ✅ 100+ endpoints to handle all banking operations.
 - 👤 Role-based support for users, employees, customers, employees, and admins.
 - 💸 accounts, Money transfers, transactions, and currency conversion.
@@ -54,7 +51,6 @@ This layered architecture enhances **scalability** and **maintainability** by or
 - 🔐 Secure hashing of sensitive data such as passwords and PIN codes in the database.
 
 ## 📋 Request Logging
-
 The project includes middleware that logs every API call with details such as:
 
 - Timestamp of the request.  
@@ -66,11 +62,9 @@ The project includes middleware that logs every API call with details such as:
 Logs are saved in the `logs` folder inside the Bank System folder in the project directory.
 
 ## 🔧 Custom Attributes
-
 The project includes custom attributes that can be applied to classes, methods, or properties to enforce validation and other business rules. These attributes help keep the code clean and maintainable by centralizing common logic in reusable decorators.
 
 ## 📊 Database Tables and Seed Data
-
 The project database contains a variety of tables used to support banking operations. These include:
 
 - **People**
@@ -90,14 +84,12 @@ The project database contains a variety of tables used to support banking operat
 - **FeeSettings**
 
 ### 🧪 Seeded vs Empty Tables
-
 Some tables come preloaded with sample (seed) data to support development and testing and enable using the project right away:
 
 - ✅ `People`, `Users`, `Employees`, `Customers`,`Accounts`, `TransactionTypes`, `TransferReasons`, `AccountStatuses`, `Departments`, `FeeSettings`, `Countries`, and `Currencies` include initial data.
 - 🚫 `Transactions`, `Transfers`, and `LogIns`, start empty by default.
 
 ## 📝 Important Note on Versions
-
 This project comes in two primary database versions:
 
 - **SQL Server Version:**  
@@ -114,7 +106,6 @@ The version included in this repository is the **SQLite version**, chosen becaus
 While the SQLite version differs slightly from the SQL Server version (e.g., no stored procedures and some differences in data type handling), the core functionality and business logic remain consistent across both versions.
 
 ## 🚀 How to Run
-
 Follow these steps to get the Bank System Web API running on your local machine:
 
 1. **Prerequisites:**  
@@ -132,30 +123,22 @@ Follow these steps to get the Bank System Web API running on your local machine:
    ```bash 
     dotnet run
 
-5. Access the API
-
+5. **Access the API**
 Once the app is running, open your browser and navigate to the URL shown in the terminal (e.g., `http://localhost:5136`).
-
 > **Note:** The port number may vary each time you run the app, but the default port is **5136**.
 
 To access the Swagger UI, append `/swagger` to the base URL:
-
 `http://localhost:<PORT>/swagger`
 
 Replace `<PORT>` with the actual port number displayed in your terminal.
 
-
 ## 🔑 Accessing the System
-
 To interact with the system's endpoints via Swagger UI, authentication is required.
 
 1. Locate the **Login** API endpoint (usually the last one listed in the Swagger documentation).
-
 2. Use the following credentials to log in:
-
    - **Username:** MainUser  
    - **Password:** MainUser
-
 3. Now you Can Use the API.
 
 ## 🗨️ Feedback
