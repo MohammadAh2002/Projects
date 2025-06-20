@@ -1,0 +1,4 @@
+2025-06-10 17:28:55.938 +03:00 [INF] Request GET to /api/Account/Find/1 responded with 401
+2025-06-10 17:30:30.039 +03:00 [INF] Request GET to /api/Account/Find/1 responded with 404
+2025-06-10 17:30:37.417 +03:00 [INF] Request GET to /api/Account/IsExist/2 responded with 404
+2025-06-10 18:12:28.758 +03:00 [INF] Request GET to /api/Customer/Find/1 responded with 401
