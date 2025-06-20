@@ -1,9 +1,11 @@
 .vscode/
 .vs/
+.idea/
 
 bin/
 obj/
 out/
+artifacts/
 
 *.user
 *.suo
@@ -15,9 +17,6 @@ out/
 
 project.lock.json
 project.fragment.lock.json
-artifacts/
-
-.idea/
 
 .DS_Store
 Thumbs.db
@@ -25,3 +24,5 @@ Thumbs.db
 logs/
 
 *.http
+
+BankSystemDB.db
