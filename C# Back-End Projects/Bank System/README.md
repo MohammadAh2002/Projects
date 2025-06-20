@@ -83,7 +83,7 @@ The project database contains a variety of tables used to support banking operat
 - **Departments**
 - **FeeSettings**
 
-### 🧪 Seeded vs Empty Tables
+## 🧪 Seeded vs Empty Tables
 Some tables come preloaded with sample (seed) data to support development and testing and enable using the project right away:
 
 - ✅ `People`, `Users`, `Employees`, `Customers`,`Accounts`, `TransactionTypes`, `TransferReasons`, `AccountStatuses`, `Departments`, `FeeSettings`, `Countries`, and `Currencies` include initial data.
