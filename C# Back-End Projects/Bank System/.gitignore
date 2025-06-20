@@ -1,4 +1,6 @@
 .vscode/
+.vs/
+
 bin/
 obj/
 out/
@@ -20,4 +22,4 @@ artifacts/
 .DS_Store
 Thumbs.db
 
-/logs/
+logs/

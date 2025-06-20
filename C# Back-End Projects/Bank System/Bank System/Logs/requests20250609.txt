@@ -1,4 +1,0 @@
-2025-06-09 18:55:43.442 +03:00 [INF] Request GET to /api/Country/GetAll responded with 401
-2025-06-09 18:56:15.114 +03:00 [INF] Request GET to /api/Country/GetAll responded with 200
-2025-06-09 18:56:22.199 +03:00 [INF] Request GET to /api/Country/GetAll responded with 200
-2025-06-09 19:04:52.114 +03:00 [INF] Request GET to /api/Country/GetAll responded with 200
