@@ -125,12 +125,12 @@ Follow these steps to get the Bank System Web API running on your local machine:
 
 5. **Access the API:**  
    Once the app is running, open your browser and navigate to the URL shown in the terminal (e.g., `http://localhost:5136`).
-> **Note:** The port number may vary each time you run the app, but the default port is **5136**.
+  > **Note:** The port number may vary each time you run the app, but the default port is **5136**.
 
-To access the Swagger UI, append `/swagger` to the base URL:
-`http://localhost:<PORT>/swagger`
+  To access the Swagger UI, append `/swagger` to the base URL:
+  `http://localhost:<PORT>/swagger`
 
-Replace `<PORT>` with the actual port number displayed in your terminal.
+  Replace `<PORT>` with the actual port number displayed in your terminal.
 
 ## 🔑 Accessing the System
 To interact with the system's endpoints via Swagger UI, authentication is required.
