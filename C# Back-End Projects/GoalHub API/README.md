@@ -249,9 +249,9 @@ You can open the entire project by double-clicking the solution file.
 
 ## 📁 Postman Collection
 
-Included file:
+the Project Include file:
 
-- **GoalHub APIs.postman** to call APIs
+- **GoalHub APIs Postman** to call the APIs (not recommended)
 
 Swagger UI is recommended for testing filtering, sorting, paging, and other features.
 
