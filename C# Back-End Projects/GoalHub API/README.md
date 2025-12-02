@@ -220,12 +220,12 @@ cd GoalHub
 dotnet ef database update
 ```
 
-### 4. Run the application
+### 5. Run the application
 ```bash
 dotnet run
 ```
 
-### 5. API Access & Port Details
+### 6. API Access & Port Details
 
 - By default, the application runs on port **7128**, but this may change depending on your environment.  
 - To check the actual port:  
