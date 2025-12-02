@@ -189,7 +189,7 @@ https://dotnet.microsoft.com/download
 
 ### 2. Clone the project
 ```bash
-git clone <your repo>
+git clone https://github.com/MohammadAh2002/Projects.git
 ```
 
 ### 3. Navigate to the project folder
@@ -229,12 +229,12 @@ dotnet run
 
 - By default, the application runs on port **7128**, but this may change depending on your environment.  
 - To check the actual port:  
-  1. Look in `Properties/launchSettings.json` under `"applicationUrl"`.  
-  2. Or observe the port in the console output when running:
+1. Look in `Properties/launchSettings.json` under `"applicationUrl"`.  
+2. Or observe the port in the console output when running:
   
-  ```bash
-  dotnet run
-  ```
+```bash
+dotnet run
+```
 
 Access Swagger UI (recommended) using the detected port:
 
