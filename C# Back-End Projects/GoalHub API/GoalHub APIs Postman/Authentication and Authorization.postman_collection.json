@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "b3ed8759-c85a-4806-87a3-38d034417d32",
+		"name": "Authentication and Authorization",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32925648",
+		"_collection_link": "https://goal-hub-team.postman.co/workspace/Goal-Hub-APIs~1b3510e5-3c7f-45c0-9738-06e46b232548/collection/32925648-b3ed8759-c85a-4806-87a3-38d034417d32?action=share&source=collection_link&creator=32925648"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstname\": \"Chris\",\r\n  \"lastname\": \"Martin\",\r\n  \"username\": \"CMartin\",\r\n  \"password\": \"Password1000\",\r\n  \"email\": \"chris.martin@mail.com\",\r\n  \"phonenumber\": \"555-606\",\r\n  \"roles\": [\r\n    \"Match Viewer\"\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{MainURI}}/Authentication",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Authentication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let Result = pm.response.json()\r",
+							"pm.environment.set('Token', Result.token)"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n  \"username\": \"JDoe\",\r\n  \"password\": \"Password1000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{MainURI}}/Authentication/login",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Authentication",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{Token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "95df0d77-ad66-49f5-8644-1c8573e22d21",
+		"name": "Player APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32925648",
+		"_collection_link": "https://goal-hub-team.postman.co/workspace/Goal-Hub-APIs~1b3510e5-3c7f-45c0-9738-06e46b232548/collection/32925648-95df0d77-ad66-49f5-8644-1c8573e22d21?action=share&source=collection_link&creator=32925648"
+	},
+	"item": [
+		{
+			"name": "Get Player",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MainURI}}/PLayers/1",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"PLayers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Player",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Position\": \"Striker\",\r\n    \"CurrentTeamID\": 3,\r\n    \"PersonID\": 1028,\r\n    \"ShirtNumber\": 8\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{MainURI}}/Players",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Players",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Position\": \"Attacker\",\r\n    \"CurrentTeamID\": 2,\r\n    \"PersonID\": 29,\r\n    \"ShirtNumber\": 10\r\n\r\n}"
+				},
+				"url": {
+					"raw": "{{MainURI}}/Players?fields=id,CurrentTeamID,Status",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Players"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,CurrentTeamID,Status"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Player",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Position\": \"Attacker\",\r\n    \"CurrentTeamID\": 2,\r\n    \"PersonID\": 29,\r\n    \"ShirtNumber\": 10\r\n\r\n}"
+				},
+				"url": {
+					"raw": "{{MainURI}}/Players/3",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Players",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Player",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Position\": \"Left Wing\",\r\n    \"CurrentTeamID\": 1,\r\n    \"ShirtNumber\": 7\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{MainURI}}/Players/4",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Players",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Options",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "{{MainURI}}/Players",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Players"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Player",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{ \r\n    \"op\": \"replace\", \r\n    \"path\": \"/ShirtNumber\", \r\n    \"value\": 11\r\n}] ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{MainURI}}/Players/5",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Players",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"goals\": 830,\r\n    \"assists\": 392,\r\n    \"redCards\": 1,\r\n    \"yellowCards\": 15\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{MainURI}}/Players/1/Status",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Players",
+						"1",
+						"Status"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{Token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

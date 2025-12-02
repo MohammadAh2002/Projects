@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "a9569ce8-3b85-4070-840e-8f219903c915",
+		"name": "General",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32925648",
+		"_collection_link": "https://goal-hub-team.postman.co/workspace/Goal-Hub-APIs~1b3510e5-3c7f-45c0-9738-06e46b232548/collection/32925648-a9569ce8-3b85-4070-840e-8f219903c915?action=share&source=collection_link&creator=32925648"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MainURI}}/health",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health Check Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MainURI}}/health/custom",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"health",
+						"custom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swagger json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MainURI}}/swagger/v1/swagger.json",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"swagger",
+						"v1",
+						"swagger.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

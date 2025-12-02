@@ -1,0 +1,288 @@
+{
+	"info": {
+		"_postman_id": "8cd06c3f-2e8b-462d-bee4-d7b3bf2e5d60",
+		"name": "Team APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32925648",
+		"_collection_link": "https://goal-hub-team.postman.co/workspace/Goal-Hub-APIs~1b3510e5-3c7f-45c0-9738-06e46b232548/collection/32925648-8cd06c3f-2e8b-462d-bee4-d7b3bf2e5d60?action=share&source=collection_link&creator=32925648"
+	},
+	"item": [
+		{
+			"name": "Create Team",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Name\": \"Test\",\r\n    \"Abbreviation\": \"T\",\r\n    \"CityID\": 11,\r\n    \"StadiumID\": 8,\r\n    \"FoundedDate\": \"1933-01-01\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{MainURI}}/Teams",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Teams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Team",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Name\": \"Real Madride\",\r\n    \"Abbreviation\": \"REL\",\r\n    \"CityID\": 12,\r\n    \"StadiumID\": 2,\r\n    \"FoundedDate\": \"1905-01-01\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "{{MainURI}}/Teams/3",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Teams",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Team V2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "2.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Name\": \"Real Madride\",\r\n    \"Abbreviation\": \"REL\",\r\n    \"CityID\": 12,\r\n    \"StadiumID\": 2,\r\n    \"FoundedDate\": \"1905-01-01\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "{{MainURI}}/Teams/1",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Teams",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teams",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Name\": \"Real Madride\",\r\n    \"Abbreviation\": \"REL\",\r\n    \"CityID\": 12,\r\n    \"StadiumID\": 2,\r\n    \"FoundedDate\": \"1905-01-01\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "{{MainURI}}/Teams",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Teams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Teams V2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api-version",
+						"value": "2.0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Name\": \"Real Madride\",\r\n    \"Abbreviation\": \"REL\",\r\n    \"CityID\": 12,\r\n    \"StadiumID\": 2,\r\n    \"FoundedDate\": \"1905-01-01\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "{{MainURI}}/Teams?fields=ID,Name,Abbreviation",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Teams"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "ID,Name,Abbreviation"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Options",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"Name\": \"Real Madride\",\r\n    \"Abbreviation\": \"REL\",\r\n    \"CityID\": 12,\r\n    \"StadiumID\": 2,\r\n    \"FoundedDate\": \"1905-01-01\"\r\n\r\n}"
+				},
+				"url": {
+					"raw": "{{MainURI}}/Teams",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Teams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Team",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"op\": \"replace\",\r\n    \"path\": \"/name\",\r\n    \"value\": \"FC Bayern Munich\"\r\n  },\r\n  {\r\n    \"op\": \"replace\",\r\n    \"path\": \"/abbreviation\",\r\n    \"value\": \"FCB\"\r\n  }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{MainURI}}/Teams/3",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Teams",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set Logo",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Logo",
+							"type": "file",
+							"src": "/C:/Users/lexmo/Desktop/Real-Madrid-Logo.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{MainURI}}/Teams/1/Logo",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Teams",
+						"1",
+						"Logo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Team",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{MainURI}}/Teams/5",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Teams",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{Token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

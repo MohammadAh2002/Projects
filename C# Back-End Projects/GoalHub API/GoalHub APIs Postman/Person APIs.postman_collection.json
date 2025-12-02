@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "fdf7309e-ecf4-4c59-86e9-d92d4d2706e5",
+		"name": "Person APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32925648",
+		"_collection_link": "https://goal-hub-team.postman.co/workspace/Goal-Hub-APIs~1b3510e5-3c7f-45c0-9738-06e46b232548/collection/32925648-fdf7309e-ecf4-4c59-86e9-d92d4d2706e5?action=share&source=collection_link&creator=32925648"
+	},
+	"item": [
+		{
+			"name": "Create Person",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Name",
+							"value": "Mohammad Ahmad",
+							"type": "text"
+						},
+						{
+							"key": "BirthDate",
+							"value": "30-4-2002",
+							"type": "text"
+						},
+						{
+							"key": "CountryID",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "Photo",
+							"type": "file",
+							"src": "/C:/Users/lexmo/Desktop/عشوائيات/Images/IMG_0337.png"
+						},
+						{
+							"key": "Gender",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{MainURI}}/People",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"People"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Person",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{ \r\n    \"op\": \"replace\", \r\n    \"path\": \"/name\", \r\n    \"value\": \"Neymar\"\r\n}] ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{MainURI}}/People/32",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"People",
+						"32"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Image",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/C:/Users/lexmo/Desktop/عشوائيات/Images/IMG_0299.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{MainURI}}/People/1028/Photo",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"People",
+						"1028",
+						"Photo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Options",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"url": {
+					"raw": "{{MainURI}}/People",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"People"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{Token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

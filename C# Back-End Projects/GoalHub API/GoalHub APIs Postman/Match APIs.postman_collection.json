@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "5cfdbf90-2f42-4cb9-8b76-55b9612fc1d9",
+		"name": "Match APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32925648",
+		"_collection_link": "https://goal-hub-team.postman.co/workspace/Goal-Hub-APIs~1b3510e5-3c7f-45c0-9738-06e46b232548/collection/32925648-5cfdbf90-2f42-4cb9-8b76-55b9612fc1d9?action=share&source=collection_link&creator=32925648"
+	},
+	"item": [
+		{
+			"name": "Get Match",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MainURI}}/Matchs/4",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Matchs",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Matchs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{MainURI}}/Matchs?fields=ID,KickoffTime,AwayTeamScore,HomeTeamScore",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Matchs"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "ID,KickoffTime,AwayTeamScore,HomeTeamScore"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Match",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"HomeTeamID\": 3,\r\n  \"AwayTeamID\": 4,\r\n  \"KickOffTime\": \"2020-05-28T20:00:00\",\r\n  \"StadiumID\": 5,\r\n  \"HomeTeamScore\": 1,\r\n  \"AwayTeamScore\": 0,\r\n  \"Round\": \"Final\",\r\n  \"StatusID\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{MainURI}}/Matchs",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Matchs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Options",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"HomeTeamID\": 3,\r\n  \"AwayTeamID\": 4,\r\n  \"KickOffTime\": \"2020-05-28T20:00:00\",\r\n  \"StadiumID\": 5,\r\n  \"HomeTeamScore\": 1,\r\n  \"AwayTeamScore\": 0,\r\n  \"Round\": \"Final\",\r\n  \"StatusID\": 1\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{MainURI}}/Matchs",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Matchs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch Match",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{ \r\n    \"op\": \"replace\", \r\n    \"path\": \"/StadiumID\", \r\n    \"value\": 1\r\n}] ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{MainURI}}/Matchs/4",
+					"host": [
+						"{{MainURI}}"
+					],
+					"path": [
+						"Matchs",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{Token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
