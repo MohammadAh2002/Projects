@@ -177,9 +177,9 @@ This project supports multiple databases using Entity Framework migrations.
 
 ### 🏢 SQL Server Version
 - Requires additional configuration:
-  1. Ensure SQL Server is installed and running.
-  2. Update the connection string in `appsettings.json`.
-  3. Apply EF migrations to create the database schema.
+1. Ensure SQL Server is installed and running.
+2. Update the connection string in `appsettings.json`.
+3. Apply EF migrations to create the database schema.
 
 ## 🏃 How to Run (SQLite Default)
 
